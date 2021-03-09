@@ -2,6 +2,47 @@
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 30px; 
+		
 }
+#content {
+	font-family: 'Felix007', serif;  }
+
+body {
+	background-image: url("pictuers/mimoza.jpg");
+  font-family:Brush Script MT, Brush Script Std, cursive;
+  margin: 0;
+}
+form {
+	margin-left: 35%;
+    margin-right:0%;
+    width: 65%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgba(0, 255, 115, 0.507);
+}
+.fontSizeBig {
+	font-size: 60px;
+  }
+.fontSizeMid {
+font-size: 35px;
+}
+.center-block {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	
+  }
+ 
