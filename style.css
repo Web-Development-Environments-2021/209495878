@@ -5,44 +5,128 @@
 	height: 30px; 
 		
 }
+
 #content {
 	font-family: 'Felix007', serif;  }
 
 body {
 	background-image: url("pictuers/mimoza.jpg");
-  font-family:Brush Script MT, Brush Script Std, cursive;
-  margin: 0;
+  	font-family:Brush Script MT, Brush Script Std, cursive;
+  	margin: 0;
+	padding: 0;
+	background-size: auto;
+	background-size: cover;
+	font-size: 20px;
+
 }
 form {
 	margin-left: 35%;
     margin-right:0%;
-    width: 65%;
+    width: 80%;
 }
+
 .navbar {
-  overflow: hidden;
-  background-color: #333; 
-}
-.navbar a {
-  float: left;
-  font-size: 25px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: rgba(0, 255, 115, 0.507);
-}
-.fontSizeBig {
-	font-size: 60px;
+	overflow: hidden;
+	background-color: #333; 
   }
-.fontSizeMid {
-font-size: 35px;
+  
+  .navbar a {
+	float: left;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  .subnav {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+	font-size: 25px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+	background-color:  rgba(32, 121, 10, 0.897);
+  }
+  
+  .subnav-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: rgba(32, 121, 10, 0.897);
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .subnav-content a {
+	float: left;
+	color: white;
+	text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+	background-color: #eee;
+	color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+	display: block;
+  }
+
+
+.fontSizeBig {
+	font-size: 70px;
+	text-shadow: 1px 1px 2px rgb(231, 223, 223), 0 0 25px rgb(15, 126, 80), 0 0 5px rgb(131, 226, 94);
+
 }
+.fontSizeMid {
+font-size: 45px;
+text-shadow: 2px 2px 4px #d0ee8b;}
 .center-block {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	
   }
- 
+#bord {
+	background:url("pictuers/bord.jpg");
+	width: 75%;
+	height: 600px;
+	background-repeat:no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: center;
+	border: 4px solid #000;
+
+}
+input[type=submit] {
+	border-radius: 45%;
+	background-color: #8dce4f;
+	font-family:Brush Script MT, Brush Script Std, cursive;
+	color: black;
+	padding: 10px;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 25px;
+	cursor: pointer;
+	width: 10%;
+	margin-left: 18%;
+	margin-right: 30%;
+  }
+  strong{
+	font-size: 25px;
+	font-weight: bold;
+
+
+  }
+
