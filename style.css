@@ -101,13 +101,14 @@ form {
   }
 #board {
 	background:url("pictuers/board.jpg");
-	width: 75%;
+	width: 1250px;
 	height: 600px;
 	background-repeat:no-repeat;
 	margin-left: auto;
 	margin-right: auto;
 	background-position: center;
 	border: 4px solid #000;
+	display: block ;
 
 }
 

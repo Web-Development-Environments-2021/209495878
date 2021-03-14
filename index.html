@@ -31,6 +31,7 @@
         </div> 
         <a href="#like">Like</a>
         <a href="#qrcoder">QR code</a>
+        <a href="#spa">Answer</a>
         <a href="#contact">Contact Me</a>
       </div>
     </div>
@@ -86,9 +87,9 @@
       <div class="fontSizeMid" align=center ><b>My photos</div>
         <br/>
         <div id="board" >
-        <div style="margin-left:30px; margin-top:30px; "><img width="350px" height="415px" src="pictuers/mamie.jpeg" /></div>
-        <div style="margin-left:750px; margin-top:-400px; "><img width="410px" height="410px" src="pictuers/MamieMimoza.jpg" /></div>
-        <div style=" margin-left:350px; margin-top:-290px; transform:rotate(10deg);"><img width="410px" height="410px" src="pictuers/mamieEtmoi.jpeg" /></div>
+        <div style="margin-left:45px; margin-top:30px; "><img width="350px" height="415px" src="pictuers/mamie.jpeg"  /></div>
+        <div style="margin-left:765px; margin-top:-405px; "><img width="410px" height="410px" src="pictuers/MamieMimoza2.jpeg" /></div>
+        <div style=" margin-left:365px; margin-top:-295px; transform:rotate(10deg);"><img width="410px" height="410px" src="pictuers/mamieEtmoi.jpeg" /></div>
 
       </div>
       <br/>
@@ -299,41 +300,26 @@
       <h1 align=center>Feel free to contact Mamie Lisette and tell about your day or ask questions on one of the topics presented.</br>
         She will be happy to help you</h1>
       <br/>
-      <FORM METHOD = "POST" ACTION = "mailto:hadas5@post.bgu.ac.il">
+      <FORM id="myform" METHOD = "POST" ACTION = "mailto:hadas5@post.bgu.ac.il">
         <P >
           <STRONG>Name: </STRONG>
-          <INPUT  NAME = "name" TYPE = "text" SIZE = "25" autocomplete = "on">
+          <INPUT  NAME = "name" TYPE = "text" SIZE = "25">
         </P>
         <P >
-          <STRONG> Your Email:</STRONG> 
+          <STRONG>Email:</STRONG> 
           <input k type = "email" id = "email" 
-          placeholder = "___@gmail.com"
-          autocomplete = "on" /> (___@gmail.com)
-          
+          placeholder = "____@gmail.com" /> (____@gmail.com)
         </P>
-        <p>
-          <P><STRONG> Select a topic:</STRONG> 
-          <SELECT NAME = "Subject">
-            <OPTION>
-            <OPTION>Recipes
-            <OPTION>Knitting 
-            <OPTION>Games
-            <OPTION>Other
-            </SELECT></P>
-        </p>
         <P>
-          <STRONG>Free Text:</STRONG>  
-          <div class="textbox">
-            <TEXTAREA  id="emojionearea1" YourDay="how was yo day" style="display: none;" ROWS = "6" COLS = "30"></TEXTAREA>
-          </div>
+          <STRONG>Your Day:</STRONG>  
+          <TEXTAREA class="textbox" form="myform"  id="emojionearea1"  style="display: none;" ROWS = "6" COLS = "30"></TEXTAREA>
           <br/>
           <br/>
         </P>
         <p><INPUT  TYPE = "submit" VALUE = "Send"> </p>
       </FORM>
-      <br/>
-      <br/>
     </section>
+
     
     <script type="text/javascript">
       $(function(){
@@ -352,7 +338,7 @@
     <script >
       $(document).ready(function() {
       $("#emojionearea1").emojioneArea()
-      
+
       });
     </script>
   </body>
