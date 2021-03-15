@@ -300,19 +300,23 @@
       <h1 align=center>Feel free to contact Mamie Lisette and tell about your day or ask questions on one of the topics presented.</br>
         She will be happy to help you</h1>
       <br/>
-      <FORM id="myform" METHOD = "POST" ACTION = "mailto:hadas5@post.bgu.ac.il">
+      <FORM  METHOD = "POST" ACTION = "mailto:hadas5@post.bgu.ac.il" enctype="text/plain">
         <P >
           <STRONG>Name: </STRONG>
           <INPUT  NAME = "name" TYPE = "text" SIZE = "25">
         </P>
         <P >
+          <STRONG> Last Name: </STRONG>
+          <INPUT  NAME = "Last Name" TYPE = "text" SIZE = "25">
+        </P>
+        <P >
           <STRONG>Email:</STRONG> 
-          <input k type = "email" id = "email" 
+          <input  type = "text" NAME = "email" SIZE = "25"
           placeholder = "____@gmail.com" /> (____@gmail.com)
         </P>
         <P>
           <STRONG>Your Day:</STRONG>  
-          <TEXTAREA class="textbox" form="myform"  id="emojionearea1"  style="display: none;" ROWS = "6" COLS = "30"></TEXTAREA>
+          <TEXTAREA class="textbox"  id="message"  name="message" ROWS = "6" COLS = "30"></TEXTAREA>
           <br/>
           <br/>
         </P>
@@ -335,11 +339,13 @@
           $('#menu').toggle($(this).scrollTop()>1000)
       });​
     </script>
+
     <script >
       $(document).ready(function() {
-      $("#emojionearea1").emojioneArea()
+        $("#message").emojioneArea()
 
       });
     </script>
+
   </body>
 </html>
